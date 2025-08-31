@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>leck meine eier</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="fullscreen.js"></script>
+</head>
+<body>
+ <!-- Loader (Terminal-Style) -->
+    <div id="loader" class="loader">
+        <div class="scan-line"></div>
+        <p>Security Clearance Check...</p>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">SCP</div>
+        <ul>
+            <li data-page="home">Home</li>
+            <li data-page="files">SCP Files</li>
+            <li data-page="about">About</li>
+        </ul>
+    </nav>
+
+    <!-- Content -->
+    <main id="content">
+        <!-- Home -->
+        <section id="home" class="page active">
+             <img src="assets/home.jpg" alt="SCP Home" class="home-img"> 
+          <h1>willkommen bei meinen eiern!!</h1>
+          <p>
+          <strong>How to install SCP_System512 V.31.04.2</strong><br><br>
+        1. Click the box below to start the download.<br>
+        2. Wait for the download to finish.<br>
+        3. Open the installer file and follow the instructions.<br>
+        4. Accept the terms and allow camera/data access.<br>
+        5. Create your user account after installation.<br>
+        <br>
+        The system runs on Windows, Android, Linux, and Apple (after installation, not in browser).
+    </p>
+    <div id="download-box" class="download-box" tabindex="0">
+        <span>⬇ Download SCP_System512 V.31.04.2</span>
+    </div>
+    <div id="download-modal" class="download-modal" style="display:none;">
+        <div class="download-spinner"></div>
+        <p>Preparing your download...</p>
+    </div>
+</section>
+<!-- Dynamic JSON Content -->
+        <section id="json-content" class="page">
+            <h1 id="json-title"></h1>
+            <p id="json-text"></p>
+            <button onclick="goBack()">← Back</button>
+        </section>
+        <!-- Modal für Spezialboxen -->
+        <div id="modal" class="modal" style="display:none;"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
